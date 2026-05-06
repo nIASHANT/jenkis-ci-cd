@@ -8,7 +8,7 @@ const fetch = (...args) =>
   import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 // correct URL (docker ke liye)
-const URL = process.env.BACKEND_URL || 'http://backend:8000/api';
+const URL = process.env.BACKEND_URL || 'http://localhost:8000/api';
 
 app.get('/', async (req, res) => {
   try {
